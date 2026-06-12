@@ -31,7 +31,7 @@ import Login from "./Login";
 
 function App() {
   return (
-    <Router basename="/amazon-clone">
+    <Router>
       <div className="app">
 
         <Routes>
