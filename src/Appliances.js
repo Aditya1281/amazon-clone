@@ -13,13 +13,13 @@ function Appliances() {
 
   const [currentBanner, setCurrentBanner] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentBanner((prev) => (prev + 1) % banners.length);
-    }, 3000);
+useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrentBanner((prev) => (prev + 1) % banners.length);
+  }, 3000);
 
-    return () => clearInterval(timer);
-  }, []);
+  return () => clearInterval(timer);
+}, [banners.length]);
 
   return (
     <div className="categoryPage">

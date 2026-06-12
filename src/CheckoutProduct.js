@@ -11,7 +11,7 @@ function CheckoutProduct({
   rating,
 }) {
 
-  const [{ basket }, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
     dispatch({
